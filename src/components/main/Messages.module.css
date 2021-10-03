@@ -1,0 +1,17 @@
+.messages {
+    padding: 20px;
+}
+
+.dialog {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: springgreen;
+    color: black;
+    transition: 0.3s;
+}
+
+.dialog:hover {
+    background-color: teal;
+}

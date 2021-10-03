@@ -1,0 +1,13 @@
+.aside {
+    display: block;
+    background-color: lightgray;
+    width: 20%;
+}
+  
+.aside a {
+    color: #fff;
+}
+  
+a.activeLink {
+    color: rgb(255, 238, 139);
+}

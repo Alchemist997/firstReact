@@ -1,0 +1,11 @@
+.main {
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.article {
+    flex-grow: 1;
+}
