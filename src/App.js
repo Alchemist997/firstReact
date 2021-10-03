@@ -9,7 +9,7 @@ const App = props => {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Main data={props.data} />
+        <Main data={props.data} posts={props.posts} />
         <Footer />
         {/* JUST HTML */}
       </div>
