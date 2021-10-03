@@ -7,18 +7,12 @@ import music from "./main/music"
 import settings from "./main/settings"
 import Sidebar from "./sidebar"
 
-let Main = () => {
-
-    const Dialogsdata = [
-        { id: 997, name: 'Dimon', text: 'Hi bro' },
-        { id: 9972, name: 'Dimson', text: 'What\'s up?' },
-        { id: 9973, name: 'Dimas', text: 'Nice' }
-    ];
+let Main = props => {
 
     return <main className={css.main}>
         <Sidebar />
         <div className={css.article}>
-            <Route path="/messages" render={() => <Messages data={Dialogsdata} />} />
+            <Route path="/messages" render={() => <Messages data={props.data} />} />
             <Route path="/profile" component={profile} />
             <Route path="/news" component={news} />
             <Route path="/music" component={music} />

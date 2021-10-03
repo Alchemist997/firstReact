@@ -4,13 +4,12 @@ import Footer from './components/footer';
 import Header from './components/header';
 import Main from './components/main';
 
-
-const App = () => {
+const App = props => {
   return (
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Main />
+        <Main data={props.data} />
         <Footer />
         {/* JUST HTML */}
       </div>
