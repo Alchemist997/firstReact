@@ -58,3 +58,9 @@
     margin: auto 50px 5px auto;
     font-size: 14px;
 }
+
+.sendBtn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 15px;
+}

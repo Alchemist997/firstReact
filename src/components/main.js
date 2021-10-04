@@ -13,7 +13,7 @@ let Main = props => {
         <Sidebar />
         <div className={css.article}>
             <Route path="/messages" render={() => <Messages data={props.data} />} />
-            <Route path="/profile" render={() => <Profile posts={props.posts} />} />
+            <Route path="/profile" render={() => <Profile posts={props.posts} addNewPost={props.addNewPost} />} />
             <Route path="/news" component={news} />
             <Route path="/music" component={music} />
             <Route path="/settings" component={settings} />

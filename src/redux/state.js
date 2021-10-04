@@ -1,3 +1,5 @@
+import { reRender } from "../render";
+
 let state = {
     profileData: {
         posts: [
@@ -14,5 +16,16 @@ let state = {
         ]
     }
 }
+
+export let addANewPost = (text) => {
+    let newPost = {
+        photoSrc: './img/Kama.jpg',
+        name: 'Кама Пуля',
+        text: text,
+        likes: 777
+    };
+    state.profileData.posts.push(newPost);
+    reRender(state);
+};
 
 export default state
